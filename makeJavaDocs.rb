@@ -15,4 +15,4 @@ system("mkdir " << dirname)
 system("find " << srcDir << " -name *.java -print > " << dirname << "/" << javaFilesName)
 
 #javaDocの生成
-system("javadoc -d " << dirname << " @" << javaFilesName)
+system("javadoc -d " << dirname << " @" << dirname << "/" << javaFilesName)

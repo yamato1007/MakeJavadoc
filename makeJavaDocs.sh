@@ -12,7 +12,7 @@ rm -rf "${DIRNAME}"
 mkdir $DIRNAME
 
 #javaファイル一覧のファイル作成
-find $SRCDIR -name '*.java' -print > $JAVAFILESNAME
+find $SRCDIR -name '*.java' -print > $DIRNAME/$JAVAFILESNAME
 
 #javadocの作成
-javadoc -d $DIRNAME @"${JAVAFILESNAME}"
+javadoc -d $DIRNAME @$DIRNAME/$JAVAFILESNAME
